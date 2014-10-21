@@ -1,6 +1,8 @@
 Arithmetic-Coding
 =================
 
+Introduction
+--------------------------------------
 Arithmetic-Coding Exercises
 
 Arithmetic-Coding Algorithm
@@ -66,3 +68,8 @@ symbol c;
  Bugs
 --------------------------------------
 1.在編碼數字過多時，解碼會出現錯誤
+
+
+My Website
+--------------------------------------
+Press Me(http://vest12385.twbbs.org/)
