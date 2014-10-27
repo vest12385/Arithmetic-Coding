@@ -46,8 +46,8 @@ namespace Arithmetic
                 if (probability.ContainsKey(ecahWord))
                 {
                     probability[ecahWord].prob /= AllWord;
-                    probability[ecahWord].low = limit;
-                    probability[ecahWord].high = limit + probability[ecahWord].prob;
+                    probability[ecahWord].low = Math.Round(limit, 7 );
+                    probability[ecahWord].high = Math.Round(limit + probability[ecahWord].prob, 7);
                     limit = limit + probability[ecahWord].prob;
                 }
             }
