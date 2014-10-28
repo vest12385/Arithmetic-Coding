@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace Arithmetic
 {
+    /// <summary>
+    /// decoding類別
+    /// </summary>
     class decoding
     {
-        public decoding()
+        public decoding()   //建構子
         { }
-        ~decoding() { }
+        ~decoding() { } //解構子
+
+
+        /// <summary>
+        ///主要做解碼動作
+        /// </summary>
+        /// <param name="output"> 編碼完的結果 </param>
+        /// <param name="probability"> 紀錄機率跟範圍的字典，以一個cahr當作key </param>
+        /// <param name="length"> 這個Alphabet的長度 </param>
+        /// <returns> 解碼結果 </returns>
         public string decode(decimal output, Dictionary<char, code> probability, int length)
         {
             string answer = string.Empty;
@@ -29,7 +41,6 @@ namespace Arithmetic
                 }
                 round++;
             }
-            Console.WriteLine("Input : {0}", answer);
             return answer;
         }
     }
